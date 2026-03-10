@@ -36,6 +36,7 @@ A prompt tells an AI what to do once. A protocol tells an AI how to operate acro
 Each protocol is a Markdown file designed to be loaded into an AI session.
 
 **In Claude (claude.ai):**
++robert comment: change this to be "any tool" not just claude.ai
 1. Open a new conversation
 2. Upload or paste the protocol file
 3. State your task — the protocol's trigger conditions handle the rest
@@ -50,6 +51,7 @@ Each protocol is a Markdown file designed to be loaded into an AI session.
 
 **Trigger:** Upload the protocol + name a field you want to learn.
 
++ change description here - include something like "evidence based learning methodologies" or something.
 **What it produces:** A personalized study guide — structured as a formatted document or interactive HTML app — with concept maps, flashcards, gap bridges, visual keys, and verbal scripts. Calibrated to your goal (exam, interview, project, curiosity) and your current knowledge level.
 
 **Three depth levels:**
@@ -63,6 +65,7 @@ Each protocol is a Markdown file designed to be loaded into an AI session.
 
 ## Why protocols, not prompts
 
++would it make sense to talk about the non-deterministic nature of LLMs here? prompts = randomness, protocols = reproducibility. check for validity
 Prompts degrade. After a few sessions, you're re-specifying the same constraints — the same format requirements, the same quality gates, the same instructions not to over-explain the methodology. Protocols encode those decisions once and apply them consistently.
 
 The protocols in this library were developed through direct AI consulting work, tested against real output quality, and refined until the failure modes were explicitly documented and handled. They're not theory — they're specs that have been run.
