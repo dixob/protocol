@@ -25,7 +25,7 @@ A prompt tells an AI what to do once. A protocol tells an AI how to operate acro
 | # | Name | Status | Best for |
 |---|---|---|---|
 | 01 | [Study Guide Builder](protocols/01-study-guide-builder.md) | ✅ Available | Learning any field — exam prep, interviews, projects, self-study |
-| 02 | Japanese AI Interaction Guide | 🔧 In progress | Working in Japanese-language AI contexts; register and compression patterns |
+| 02 | [Japanese AI Interaction Guide](protocols/02-japanese-ai-interaction-guide.md) | ✅ Available | Working in Japanese-language AI contexts; register and compression patterns |
 | 03 | Multilingual Research Synthesis | 📋 Planned | Synthesizing sources across 2+ languages without translation-flattening |
 | 04 | System Discovery & Implementation | 📋 Planned | Onboarding to an unfamiliar technical system and building in it |
 
@@ -56,6 +56,23 @@ Each protocol is a Markdown file designed to be loaded into an AI session.
 - **Full Guide (C):** B + misconception map, "never say this" list, expert debates. ~45–60 min.
 
 → [Full specification](protocols/01-study-guide-builder.md)
+
+---
+
+## Protocol 02 — Japanese AI Interaction Guide
+
+**Trigger:** Upload the protocol + start your session in the target language.
+
+**What it produces:** Expert-register Japanese AI output — natural to a native reader, not translated or rendered from English. Covers register selection, eight compression patterns observed in professional Japanese AI usage, bilingual switching logic, translation and localization guidance, and a four-dimension evaluation rubric.
+
+**The core insight:** In Japan's professional AI user community, the highest-competency users do not write polite, formal prompts. They write terse, compressed, command-line-style instructions that assume high context. This protocol documents those patterns — observed across field delivery engineers at a Japan-market AI consulting firm — and makes them reproducible.
+
+**Three register levels:**
+- **丁寧語 (polite):** First contact, formal contexts, business-facing output
+- **普通体 (plain form):** Iterative work, internal documents, peer register
+- **命令形 (command):** Task execution, code, expert mode — the pattern this protocol is built around
+
+→ [Full specification](protocols/02-japanese-ai-interaction-guide.md)
 
 ---
 

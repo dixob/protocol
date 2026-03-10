@@ -1,2 +1,5 @@
 # Secrets and environment variables
 .env
+
+# PRD
+AI_Protocol_Library_PRD.docx
