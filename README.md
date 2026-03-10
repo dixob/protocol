@@ -61,6 +61,25 @@ Each protocol is a Markdown file designed to be loaded into an AI session.
 
 ---
 
+## Protocols vs. native skills (Cowork, Claude Code, etc.)
+
+Some AI platforms — like Anthropic's Cowork or Claude Code — support *native skills*: installed capabilities that live on disk, auto-trigger based on context, and can run code, call tools, and chain multi-step workflows. These are more powerful in their native environment. But they're also locked to it.
+
+Protocols are the portable alternative.
+
+| | Protocol | Native Skill |
+|---|---|---|
+| **Works in** | Any AI tool (Claude, ChatGPT, Gemini, etc.) | Only the platform it's installed on |
+| **Triggered by** | You — load it when you need it | The system — auto-invoked by the runtime |
+| **Context cost** | Full text loaded per session | Read once at invocation, minimal ongoing overhead |
+| **Can run code/tools** | No — instructions only | Yes — full tooling access |
+| **Portable** | Yes — one file, works anywhere | No — tied to runtime and file system |
+| **Inspectable** | Yes — plain Markdown, human-readable | Depends on platform |
+
+**When to use a protocol over a skill:** When you need the behavior to travel with you across tools, when you want the spec to be readable and shareable, or when you're working in an environment where you can't install anything. Protocols sacrifice automation for portability — that's a deliberate tradeoff, not a limitation.
+
+---
+
 ## Why protocols, not prompts
 
 Prompts degrade. After a few sessions, you're re-specifying the same constraints — the same format requirements, the same quality gates, the same instructions not to over-explain the methodology. Protocols encode those decisions once and apply them consistently.
