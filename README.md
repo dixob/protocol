@@ -35,13 +35,10 @@ A prompt tells an AI what to do once. A protocol tells an AI how to operate acro
 
 Each protocol is a Markdown file designed to be loaded into an AI session.
 
-**In Claude (claude.ai):**
-+robert comment: change this to be "any tool" not just claude.ai
+**In any AI tool (Claude, ChatGPT, Gemini, etc.):**
 1. Open a new conversation
-2. Upload or paste the protocol file
+2. Upload or paste the protocol file as your first message
 3. State your task — the protocol's trigger conditions handle the rest
-
-**In any other AI tool:** The protocols are written as instructions the model reads and follows. Paste the file contents as a system prompt or the first user message.
 
 **What happens:** The AI reads the operational spec and executes it — asking the right questions, following the defined steps, applying quality standards, and producing output in the specified format. You don't need to manage the process.
 
@@ -51,8 +48,7 @@ Each protocol is a Markdown file designed to be loaded into an AI session.
 
 **Trigger:** Upload the protocol + name a field you want to learn.
 
-+ change description here - include something like "evidence based learning methodologies" or something.
-**What it produces:** A personalized study guide — structured as a formatted document or interactive HTML app — with concept maps, flashcards, gap bridges, visual keys, and verbal scripts. Calibrated to your goal (exam, interview, project, curiosity) and your current knowledge level.
+**What it produces:** A personalized study guide — structured as a formatted document or interactive HTML app — built on learning science principles (concept maps, active recall, spaced repetition) rather than generic summarization. Calibrated to your goal (exam, interview, project, curiosity) and your current knowledge level.
 
 **Three depth levels:**
 - **Quick Start (A):** Concept map + 15 flashcards + key facts drill. ~15 min.
@@ -84,7 +80,8 @@ Protocols are the portable alternative.
 
 ## Why protocols, not prompts
 
-+would it make sense to talk about the non-deterministic nature of LLMs here? prompts = randomness, protocols = reproducibility. check for validity
+Prompts are session-bound. The constraints live in your head, so output quality varies every time — different session, different result, different standard. Protocols make quality reproducible: the spec travels with the task, not the person running it.
+
 Prompts degrade. After a few sessions, you're re-specifying the same constraints — the same format requirements, the same quality gates, the same instructions not to over-explain the methodology. Protocols encode those decisions once and apply them consistently.
 
 The protocols in this library were developed through direct AI consulting work, tested against real output quality, and refined until the failure modes were explicitly documented and handled. They're not theory — they're specs that have been run.
