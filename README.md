@@ -26,8 +26,8 @@ A prompt tells an AI what to do once. A protocol tells an AI how to operate acro
 |---|---|---|---|
 | 01 | [Study Guide Builder](protocols/01-study-guide-builder.md) | ✅ Available | Learning any field — exam prep, interviews, projects, self-study |
 | 02 | [Japanese AI Interaction Guide](protocols/02-japanese-ai-interaction-guide.md) | ✅ Available | Working in Japanese-language AI contexts; register and compression patterns |
-| 03 | Multilingual Research Synthesis | 📋 Planned | Synthesizing sources across 2+ languages without translation-flattening |
-| 04 | System Discovery & Implementation | 📋 Planned | Onboarding to an unfamiliar technical system and building in it |
+| 03 | LLM Evaluation Protocol | 📋 Planned | Measuring and gating LLM quality in production — hallucination, latency, safety |
+| 04 | [AI Discovery Sprint](protocols/04-ai-discovery-sprint.md) | ✅ Available | Scoping AI opportunities for an organization — roadmap + PoC spec in under 2 weeks |
 
 ---
 
@@ -105,9 +105,28 @@ The protocols in this library were developed through direct AI consulting work, 
 
 ---
 
+## Protocol 04 — AI Discovery Sprint
+
+**Trigger:** Upload the protocol + paste in your discovery notes (stakeholder interviews, workflow observations, background context).
+
+**What it produces:** Two deliverables — an AI Opportunity Roadmap (3–5 prioritized use cases with effort/impact framing) and a Priority PoC Spec (scoped, buildable definition of the first thing to build, with explicit success criteria and a go/no-go recommendation). Designed to deliver in under two weeks from a standing start.
+
+**Five-phase structure:**
+- **Phase 1 (Days 1–3):** Parallel stakeholder interviews and workflow mapping — runs simultaneously, not sequentially
+- **Phase 2 (Days 3–4):** Synthesis — opportunity identification, AI-fit assessment, feasibility flagging
+- **Phase 3 (Days 4–5):** Prioritization — impact × feasibility × speed scoring, first PoC selection
+- **Phase 4 (Days 5–7):** Validation — technical checklist, stakeholder alignment, success criteria lock
+- **Phase 5 (Days 7–10):** Deliverable production — roadmap + PoC spec in client-ready format
+
+**Six documented failure modes**, each with a built-in prevention step: premature PoC commitment, data availability assumptions, success criteria drift, org readiness blind spot, solutioning before problem definition, and integration complexity underestimation.
+
+→ [Full specification](protocols/04-ai-discovery-sprint.md)
+
+---
+
 ## Project status
 
-This library is actively being built. Current focus: Protocol 01 (available) and Protocol 02 (in progress, covering Japanese-language AI interaction patterns — a less-documented area with distinct behavior from English-language prompting).
+This library is actively being built. Protocols 01, 02, and 04 are available. Protocol 03 (LLM Evaluation Protocol — measuring and gating LLM quality in production) is in development.
 
 ---
 
